@@ -1,0 +1,77 @@
+
+=====================================================
+MIVA MIT PORTFOLIO 4
+REDIS KEY-VALUE DATABASE IMPLEMENTATION
+CASE STUDY: STUDENT MANAGEMENT SYSTEM
+=====================================================
+
+1. STUDENT INFORMATION
+
+Key:
+student:STU001:name
+
+Value:
+John Ade
+
+2. STUDENT ENROLLMENT STATUS
+
+Key:
+student:STU001:status
+
+Value:
+Active
+
+3. STUDENT DEPARTMENT
+
+Key:
+student:STU001:department
+
+Value:
+Computer Science
+
+4. COURSE AVAILABLE SLOTS
+
+Key:
+course:CSC401:available_slots
+
+Value:
+10
+
+5. STUDENT SESSION
+
+Key:
+session:STU001
+
+Value:
+logged_in
+
+6. EXAMPLE REDIS COMMANDS
+
+SET student:STU001:name "John Ade"
+
+GET student:STU001:name
+
+SET student:STU001:status "Active"
+
+GET student:STU001:status
+
+SET course:CSC401:available_slots 10
+
+GET course:CSC401:available_slots
+
+INCRBY course:CSC401:available_slots -1
+
+GET course:CSC401:available_slots
+
+EXPIRE session:STU001 3600
+
+=====================================================
+EXPECTED LEARNING OUTCOME
+=====================================================
+
+Demonstrate how Redis stores and retrieves information
+using unique keys and associated values.
+
+The examples illustrate fast student lookup, enrollment
+status retrieval, course slot tracking, and session
+management.

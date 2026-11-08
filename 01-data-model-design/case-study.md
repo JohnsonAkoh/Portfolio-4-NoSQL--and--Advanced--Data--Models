@@ -27,7 +27,6 @@ To model and implement the Student Management System using four NoSQL database a
 ## Purpose
 
 To demonstrate how different NoSQL data models store, retrieve, and manage student information, and explain the suitability of each model for specific application requirements.
-# MIVA MIT Academic Portfolio 4
 
 ---
 

@@ -1,5 +1,5 @@
 # MIVA MIT Academic Portfolio 4
-# NoSQL and Advanced Data Models
+## NoSQL and Advanced Data Models
 
 **Case Study:** Student Management System
 **Programmed:** Masters in information technology (MIT)

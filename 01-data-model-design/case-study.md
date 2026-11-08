@@ -1,25 +1,19 @@
-# Student Management System – Case Study
+# MIVA MIT Academic Portfolio 4
 
-## Project Overview
-
-This project uses the Student Management System developed in the previous MIVA MIT database portfolios as the foundation for exploring NoSQL and advanced data models.
-
-## Core Entities
-
-- Students
-- Departments
-- Lecturers
-- Courses
-- Semesters
-- Course Offerings
-- Enrollments
-- Results
-
-## Purpose
-
-To demonstrate how different NoSQL data models store, retrieve, and manage student information, and explain the suitability of each model for specific application requirements.
+**Case Study:** Student Management System
+**Programmed:** Masters in information technology (MIT)
+**Specialization:** Information Technology Management
+**Module:** NoSQL and Advanced Data Models
 
 ---
+
+## 1. Project Overview
+
+This project explores the design, implementation and application of NoSQL databases and advanced data models using a Student Management System as the case study.
+
+The project builds on the relational database design, query optimization and transaction management concepts explored in the previous academic portfolios.
+
+It focuses on four major NoSQL database models: document-oriented, key-value, wide-column and graph databases. Each model will be implemented using an appropriate database management technology to demonstrate how different approaches to data storage, retrieval and management can address specific information management requirements.
 
 The selected technologies are:
 
@@ -495,14 +489,3 @@ By implementing MongoDB, Redis, Apache Cassandra and Neo4j, the project will dem
 The implementation will provide practical experience in document storage, key-value retrieval, distributed wide-column data management and graph-based relationship modelling.
 
 Ultimately, the project aims to establish a clear understanding of how NoSQL technologies can complement traditional relational database systems and support modern, scalable university information management solutions.
-
----
-
-**Academic Portfolio:** MIVA MIT – Portfolio 4
-**Project Title:** NoSQL and Advanced Data Models
-**Case Study:** Student Management System
-**Programme:** Master in Information Technology
-**Specialisation:** Information Technology Management
-**Repository:** `nosql-and-advanced-data-models`
-**Status:** In Progress
-

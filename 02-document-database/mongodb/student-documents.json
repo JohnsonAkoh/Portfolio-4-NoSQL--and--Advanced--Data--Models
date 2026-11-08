@@ -1,0 +1,49 @@
+[
+  {
+    "student_id": "STU001",
+    "first_name": "John",
+    "last_name": "Ade",
+    "email": "john.ade@example.com",
+    "department": {
+      "department_id": 1,
+      "department_name": "Computer Science"
+    },
+    "enrollments": [
+      {
+        "course_code": "CSC401",
+        "course_title": "Advanced Database Systems",
+        "semester": "2026 First Semester",
+        "score": 85,
+        "grade": "A"
+      },
+      {
+        "course_code": "CSC402",
+        "course_title": "Network Architecture",
+        "semester": "2026 First Semester",
+        "score": 78,
+        "grade": "B"
+      }
+    ],
+    "enrollment_status": "Active"
+  },
+  {
+    "student_id": "STU002",
+    "first_name": "Mary",
+    "last_name": "Okafor",
+    "email": "mary.okafor@example.com",
+    "department": {
+      "department_id": 2,
+      "department_name": "Information Technology"
+    },
+    "enrollments": [
+      {
+        "course_code": "CSC401",
+        "course_title": "Advanced Database Systems",
+        "semester": "2026 First Semester",
+        "score": 91,
+        "grade": "A"
+      }
+    ],
+    "enrollment_status": "Active"
+  }
+]

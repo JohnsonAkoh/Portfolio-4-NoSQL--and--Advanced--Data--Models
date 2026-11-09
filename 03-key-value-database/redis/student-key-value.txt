@@ -1,77 +1,93 @@
 
-=====================================================
 MIVA MIT PORTFOLIO 4
 REDIS KEY-VALUE DATABASE IMPLEMENTATION
-CASE STUDY: STUDENT MANAGEMENT SYSTEM
-=====================================================
 
-1. STUDENT INFORMATION
+Implementation Environment:
+- Windows 11
+- Memurai Developer Edition
+- Redis-compatible command interface
+- Port: 6379
+- Case Study: Student Management System
 
-Key:
-student:STU001:name
+1. CONNECTION TEST
 
-Value:
-John Ade
+Command:
+PING
 
-2. STUDENT ENROLLMENT STATUS
+Expected Result:
+PONG
 
-Key:
-student:STU001:status
+2. STUDENT INFORMATION STORAGE
 
-Value:
-Active
-
-3. STUDENT DEPARTMENT
-
-Key:
-student:STU001:department
-
-Value:
-Computer Science
-
-4. COURSE AVAILABLE SLOTS
-
-Key:
-course:CSC401:available_slots
-
-Value:
-10
-
-5. STUDENT SESSION
-
-Key:
-session:STU001
-
-Value:
-logged_in
-
-6. EXAMPLE REDIS COMMANDS
-
+Store student name:
 SET student:STU001:name "John Ade"
 
+Retrieve student name:
 GET student:STU001:name
 
-SET student:STU001:status "Active"
+Store student status:
+SET student:STU001:status "Graduated"
 
+Store department:
+SET student:STU001:department "Computer Science"
+
+Retrieve student status:
 GET student:STU001:status
 
-SET course:CSC401:available_slots 10
+Retrieve department:
+GET student:STU001:department
 
+3. COURSE CAPACITY MANAGEMENT
+
+Set available course slots:
+SET course:CSC401:available_slots 20
+
+Reduce available slots:
+DECR course:CSC401:available_slots
+
+Retrieve remaining slots:
 GET course:CSC401:available_slots
 
-INCRBY course:CSC401:available_slots -1
+Expected Result:
+19
 
+4. TEMPORARY STUDENT SESSION
+
+Create session:
+SET session:STU001 "active"
+
+Set expiration to 300 seconds:
+EXPIRE session:STU001 300
+
+Check remaining lifetime:
+TTL session:STU001
+
+5. KEY VERIFICATION
+
+List student keys:
+KEYS student:STU001:*
+
+Verify course capacity:
 GET course:CSC401:available_slots
 
-EXPIRE session:STU001 3600
+6. IMPLEMENTATION SUMMARY
 
-=====================================================
-EXPECTED LEARNING OUTCOME
-=====================================================
+The implementation demonstrates:
+- Key-value data storage and retrieval.
+- Student information management.
+- Atomic numeric counter operations.
+- Automatic key expiration.
+- Time-to-live verification.
+- Key inspection and verification.
 
-Demonstrate how Redis stores and retrieves information
-using unique keys and associated values.
+7. SUITABILITY
 
-The examples illustrate fast student lookup, enrollment
-status retrieval, course slot tracking, and session
-management.
+The Redis key-value model is suitable for:
+- Temporary student login sessions.
+- Fast access to student profile information.
+- Course registration capacity counters.
+- Frequently accessed application data.
+
+Note:
+Memurai Developer Edition was used as a
+Redis-compatible implementation on Windows 11.

@@ -1,4 +1,3 @@
-
 // MIVA MIT Portfolio 4
 // MongoDB Student Management System
 // Database: student_management_nosql
